@@ -1,0 +1,28 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.icono{
+	position: fixed;
+	font-size: 30px;
+
+	/*Primer parametro: Nombre de la animacion
+	Segundo parametro: Duracion de la animacion
+	Tercer parametro: Velocidad lineal
+	Cuarto parametro: El ultimo parametro sera con el que se quede el objeto*/
+	animation: caida 3s Linear forwards;
+}
+
+
+@keyframes caida{
+
+	to{
+		transform: translateY(100vh);
+	}
+
+	from{
+		transform: translateY(-1vh);
+	}
+}
