@@ -1,0 +1,187 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+header{
+	height: 10vh;
+	width: 100%;
+	background-color: orange;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	position: sticky;
+	top: 0px;
+	z-index: 100;
+}
+	#enlaces{
+		display: flex;
+		flex-direction: row;
+	}
+		a{
+			text-decoration: none;
+			color: black;
+		}
+	header h2{
+		margin: 40px;
+		font-family: Candara;
+		color: black;
+	}
+
+
+.contenedorPrincipal{
+	height: 300vh;
+	width: 100%;
+	background-color: gray;
+}
+
+	.cuerpoDatos{
+		height: 100vh;
+		background-color: rgba(129, 180, 218, 1);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+		#nombre{
+			font-size: 50px;
+			font-family: Candara;
+		}
+
+		#estudios{
+			margin: 15px;
+			font-size: 30px;
+			font-family: Candara;
+		}
+
+	.cuerpoProyectos{
+		height: 110vh;
+		background-color: white;
+	}
+		.cuerpoProyectos h1{
+			text-align: center;
+			border: 2px solid black;
+			background-color: orange;
+			font-family: Candara;
+			padding: 10px;
+			margin-right: 300px;
+			margin-left: 300px;
+		}
+		.contenedorProy{
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-items: center;
+			justify-content: center;
+		}
+			.proyecto{	
+				width: 40%;
+				background-color: rgba(60, 202, 213, 0.3);
+				border: 1px solid black;
+				border-radius: 10px;
+				margin: 25px;
+				height: 40vh;
+			}
+				.tituloGitHub{
+					display: flex;
+					margin: 10px;
+					border: 2px solid black;
+					background-color: rgba(129, 180, 218, 1); 
+				}
+					.tituloGitHub h2{
+						text-align: center;
+						font-family: Candara;
+						float: center;
+						margin: auto;
+					}
+					.imagenGithub{
+						width: 50px;
+						height: 50px;
+						border-right: 1px solid black;
+						border-left: 1px solid black;
+						padding: 5px;
+						margin-right: 20px;
+					}
+				.contenedorImagen{
+					width: 60%;
+					border: 2px solid black;
+					float: center;
+					margin: auto;
+				}
+					.imagenProyecto{
+						width: 100%;
+						height: 25vh;
+						display: block;
+					}
+
+	.cuerpoContacto{
+		height: 100vh;
+		background-color: rgba(129, 180, 218, 1);
+	}
+		.cuerpoContacto h1{
+			text-align: center;
+			border: 2px solid black;
+			background-color: orange;
+			font-family: Candara;
+			padding: 10px;
+			margin-right: 300px;
+			margin-left: 300px;
+		}
+		.cuerpoContacto h2{
+			font-size: 50px;
+			margin: 30px;
+			margin-top: 100px;
+			font-family: Candara;
+			text-align: center;
+		}
+		.redesSociales{
+			display: flex;
+			justify-content: space-around;
+		}
+			.redes{
+				margin-top: 40px;
+				width: 100px;
+				height: 100px;
+			}
+
+
+@keyframes diamond-in-center {
+  from {
+    clip-path: polygon(50% 50%, 50% 50%, 50% 50%, 50% 50%);
+  }
+  to {
+    clip-path: polygon(-50% 50%, 50% -50%, 150% 50%, 50% 150%);
+  }
+}
+
+[transition-style="in:diamond:center"] {
+  animation: 1.5s cubic-bezier(.25, 1, .30, 1) diamond-in-center both;
+}
+
+@media (max-width: 840px){
+	.contenedorProy{
+		flex-direction: column;
+	}
+	.cuerpoProyectos{
+		height: 210vh;
+	}
+}
+@media (max-width: 785px){
+	.cuerpoContacto h1{
+		margin-right: 200px;
+		margin-left: 200px;
+	}
+	.cuerpoProyectos h1{
+		margin-right: 200px;
+		margin-left: 200px;
+	}
+}
+@media (max-width: 670px){
+	header{
+		flex-direction: column;
+		height: 30vh;
+	}
+}
