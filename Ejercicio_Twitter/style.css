@@ -1,0 +1,245 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+#contenedor-superior{
+	background-color: #80a6d8;
+	width: 100%;
+	height: 10vh;
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+}
+
+	#titulo{
+		display: flex;
+		flex-wrap: nowrap;
+		align-items: center;
+	}
+		#imagenLogo{
+			width: 60px;
+			height: 60px;
+			margin:15px;
+		}
+	#abrirFichero{
+		background: white;
+		padding: 5px;
+		border: 3px solid black;
+		border-radius: 10px;
+		margin-right: 20px;
+		margin-top: 20px;
+	}
+
+
+
+
+
+#contenedor-central{
+	display: flex;
+	flex-wrap: wrap;
+	width: 100%;
+	height: 86vh;
+}
+	
+
+	#columna-izquierda{
+		width: 20%;
+
+	}
+		.enlaces{
+			display: flex;
+			margin: 30px;
+			align-items: center;
+		}
+
+		.enlaces h2{
+			margin-left: 50px;
+		}
+
+		.iconoEnlace{
+			width: 45px;
+			height: 45px;
+		}
+
+
+
+
+	#columna-central{
+		width: 60%;
+		padding: 30px;
+		padding-top: 10px;
+	}
+
+		#columna-central h1{
+			font-size: 40px;
+			margin: 10px;
+			margin-bottom: 5px;
+		}
+
+
+		.tweet{
+			padding: 20px;
+		}
+
+			.tweeth2{
+				font-size: 30px;
+				color: #154B79;
+				font-weight: bold;
+				margin-bottom: 10px;
+			}
+
+			.tweetp{
+				font-size: 20px;
+				font-weight: bold;
+			}
+
+			.imagenTweet{
+				width: 800px;
+				height: 300px;
+				margin: 15px;
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+
+
+	#columna-derecha{
+		width: 20%;
+		padding: 10px;
+	}
+
+		#contenedorSugerencias{
+			background: rgba(231, 236, 236, 0.7);
+			padding: 8px;
+		}
+		#contenedorTendencias{
+			background: rgba(231, 236, 236, 0.7);
+			padding: 8px;
+		}
+
+			.sugerencia{
+				display: flex;
+				padding: 10px;
+				margin: 10px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				align-items: center;
+				border: 2px solid black;
+				background-color: white;
+			}
+
+				.botonSeguir{
+					position: absolute;
+					right: 50px;
+				}
+
+					.boton{
+						background-color: #4a8ee6;
+						color: white;
+						font-weight: bold;
+						padding: 10px;
+						border-radius: 10px;
+						border: 2px black solid;
+					}
+
+				.imagenSugerencia{
+					width: 40px;
+					height: 40px;
+					margin-left: 10px;
+					margin-right: 20px;
+				}
+				.nombreH2{
+
+				}
+
+			.tendencia{
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				padding-left: 25px;
+				margin: 10px;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+
+				.imagenTendencia{
+					width: 110px;
+					height: 80px;
+					border: 1px black solid;
+					border-radius: 20px;
+					margin: 5px;
+				}
+				.tituloH3{
+
+				}
+
+
+
+
+#contenedor-inferior{
+	background: #80a6d8;
+	width: 100%;
+	height: 4vh;
+	position: fixed;
+	bottom: 0;
+}
+	#contenedor-inferior h3{
+		text-align: center;
+		margin-top: 5px;
+	}
+
+
+
+
+
+.titulosModulos{
+	font-size: 30px;
+	margin: 10px;
+	margin-bottom: 5px;
+}
+
+
+
+
+
+@media (max-width: 1300px){
+	#contenedor-central{
+		flex-flow:column;
+	}
+	#columna-izquierda,#columna-central, #columna-derecha {
+		width: 100vw;
+	}
+	.iconoEnlace{
+		max-width:100px;
+		max-height: 100px;
+	}
+	#columna-izquierda{
+		display: flex;
+		flex-direction: column;
+		margin:-10px;
+	}
+	.enlaces{
+		margin-bottom: 0;
+	}
+	.imagenSugerencia{
+		max-width: 100px;
+		max-height: 100px;
+	}
+	.imagenTendencia{
+		max-width: 100px;
+		max-height: 100px;
+	}
+	.botonSeguir{
+		font-size: 20px;
+	}
+	.nombreH2{
+		font-size: 45px;
+	}
+	.tituloH3{
+		font-size: 20px;
+	}
+}

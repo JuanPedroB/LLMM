@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<listado>
+	<listado-tweets>
+		<tweet>
+			<nombre>Antena 3</nombre>
+			<texto>Las multas de radar suponen cada año millones y millones de euros de recaudación para las arcas públicas, pero puede que la DGT tenga que renunciar a parte de sus ingresos.</texto>
+			<imagen>Imagenes/imagenDgt.jpg</imagen>
+		</tweet>
+
+		<tweet>
+			<nombre>Counter Strike</nombre>
+			<texto>Las notas de la versión de hoy están publicadas. Se han actualizado varios mapas, así como un error de ping que elimina cualquier caso de revelar un enemigo oculto, sonidos de pasos incorrectos que se reproducen y más.</texto>
+			<imagen>Imagenes/imagenCounter.jpg</imagen>
+		</tweet>
+
+		<tweet>
+			<nombre>Unity 3D</nombre>
+			<texto>¡Unity MARS 1.3 ha aterrizado oficialmente!
+					Obtenga más información sobre las últimas funciones y mejoras en el flujo de trabajo, incluido el seguimiento corporal, cuyo objetivo es mejorar la forma en que crea experiencias inteligentes de AR.</texto>
+			<imagen>Imagenes/imagenUnity.jpg</imagen>
+		</tweet>
+	</listado-tweets>
+
+	<listado-sugerencias>
+		<sugerencia>
+			<imagen>Imagenes/iconoAntena3.png</imagen>
+			<nombre>Antena 3</nombre>
+			<boton>Seguir</boton>
+		</sugerencia>
+
+		<sugerencia>
+			<imagen>Imagenes/iconoSteam.png</imagen>
+			<nombre>Steam</nombre>
+			<boton>Seguir</boton>
+		</sugerencia>
+
+		<sugerencia>
+			<imagen>Imagenes/iconoDiscord.png</imagen>
+			<nombre>Discord</nombre>
+			<boton>Seguir</boton>
+		</sugerencia>
+	</listado-sugerencias>
+
+	<listado-tendencias>
+		<tendencia>
+			<titulo>Covid-19</titulo>
+			<imagen>Imagenes/coronavirus.jpg</imagen>
+		</tendencia>
+		
+		<tendencia>
+			<titulo>Robot Perseverance</titulo>
+			<imagen>Imagenes/perseverance.jpg</imagen>
+		</tendencia>
+
+		<tendencia>
+			<titulo>Worlds LoL</titulo>
+			<imagen>Imagenes/LoL.jpg</imagen>
+		</tendencia>
+	</listado-tendencias>
+</listado>
